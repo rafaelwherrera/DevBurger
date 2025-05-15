@@ -1,0 +1,17 @@
+// export const standardTheme = {
+//     red: '#d00000',
+//     darkRed: '#9d0208',
+//     secondDarkRed: '#6a040f',
+//     orange: '#dc2f02',
+//     mainBlack: '#1f1f1f',
+//     black: '#363636',
+//     secondBlack: '#484848',
+//     darkGray: '#625e5e',
+//     lightGray: '#cdcdcd',
+//     white: '#fff',
+//     secondWhite: '#f0f0f0',
+//     darkWhite: '#f4f4f4',
+//     gren: '#61a120',
+//     burguerFont: '"Burguer", sans-serif',
+//     poppinsFont: '"Poppins", sans-serif',
+//     }

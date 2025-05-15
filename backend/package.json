@@ -1,0 +1,40 @@
+{
+  "name": "devburguer",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "author": {
+    "name": "Rafael Herrera",
+    "url": "https://github.com/rafaelwherrera"
+  },
+  "license": "ISC",
+  "description": "DevBurguer API.",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.1",
+    "multer": "^1.4.5-lts.2",
+    "pg": "^8.15.6",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "socket.io": "^4.8.1",
+    "stripe": "^18.1.0",
+    "sucrase": "^3.35.0",
+    "uuid": "^11.1.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@eslint/json": "^0.12.0",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.10",
+    "sequelize-cli": "^6.6.2"
+  }
+}
