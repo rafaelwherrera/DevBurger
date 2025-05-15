@@ -1,9 +1,19 @@
 import styled from "styled-components";
 import { Button } from "../../../components";
 
+export const Wrapper = styled.div`
+  margin-left: ${(props) => (props.$collapsed ? '80px' : '250px')};
+  transition: margin-left 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: auto;
+`;
+
 export const Container = styled.div`
   max-width: 480px;
-  margin: 40px auto;
+  width: 100%;
   padding: 32px 24px;
   background-color: #1f1f2e;
   border-radius: 16px;
@@ -58,10 +68,7 @@ export const Input = styled.input`
 
 export const SubmitButton = styled(Button)`
   margin-top: 12px;
-  height: 48px;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 8px;
+
 `;
 
 export const ErrorMessage = styled.span`

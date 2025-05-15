@@ -13,6 +13,7 @@ import {
   Input,
   SubmitButton,
   ErrorMessage,
+  Wrapper,
 } from "./styles";
 
 import { api } from "../../../services/api";
@@ -56,23 +57,26 @@ export function EditCategory() {
   };
 
   return (
-    <Container>
-      <h2>Editar Categoria</h2>
-      <Form onSubmit={handleSubmit(onSubmit)}>
-        <InputGroup>
-          <Label>Nome</Label>
-          <Input type="text" {...register("name")} />
-          <ErrorMessage>{errors?.name?.message}</ErrorMessage>
-        </InputGroup>
+    <Wrapper>
+      <Container>
+        <h2>Editar Categoria</h2>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <InputGroup>
+            <Label>Nome</Label>
+            <Input type="text" {...register("name")} />
+            <ErrorMessage>{errors?.name?.message}</ErrorMessage>
+          </InputGroup>
 
-        <InputGroup>
-          <Label>Descrição</Label>
-          <Input type="text" {...register("description")} />
-          <ErrorMessage>{errors?.description?.message}</ErrorMessage>
-        </InputGroup>
+          <InputGroup>
+            <Label>Descrição</Label>
+            <Input type="text" {...register("description")} />
+            <ErrorMessage>{errors?.description?.message}</ErrorMessage>
+          </InputGroup>
 
-        <SubmitButton>Salvar</SubmitButton>
-      </Form>
-    </Container>
+          <SubmitButton>Editar Categoria</SubmitButton>
+        </Form>
+      </Container>
+    </Wrapper>
+
   );
 }
