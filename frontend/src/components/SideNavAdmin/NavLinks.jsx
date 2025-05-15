@@ -4,47 +4,37 @@ import './styles'
 
 export const navLinks = [
     
+
     {
         id: 1,
-        label: 'Dashboard',
-        path: '/admin',
-        icon: <Receipt />
-    },
-    {
-        id: 2,
         label: 'Pedidos',
         path: '/admin/pedidos',
         icon: <Receipt />
     },
     {
-        id: 3,
+        id: 2,
         label: 'Produtos',
         path: '/admin/produtos',
         icon: <List />
     },
     {
-        id: 4,
+        id: 3,
         label: 'Adicionar Produtos',
         path: '/admin/novo-produto',
         icon: <ListPlus />
     },
 
     {
-        id: 5,
+        id: 4,
         label: 'Categorias',
         path: '/admin/categorias',
         icon: <Stack />
     },
     {
-        id: 6,
+        id: 5,
         label: 'Adicionar Categorias',
         path: '/admin/nova-categoria',
         icon: <StackPlus />
     },
-    {
-        id: 7,
-        label: 'Clientes',
-        path: '/admin/clientes',
-        icon: <User />
-    },
+
 ]

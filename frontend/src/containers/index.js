@@ -6,11 +6,9 @@ export * from './Register';
 export * from './Checkout';
 export * from './CompletePayment';
 export * from './Admin/Category';
-export * from './Admin/Clients';
 export * from './Admin/EditCategory';
 export * from './Admin/EditProducts';
 export * from './Admin/NewCategory';
 export * from './Admin/NewProducts';
 export * from './Admin/Orders';
 export * from './Admin/Products';
-export * from './Admin/Dashboard'

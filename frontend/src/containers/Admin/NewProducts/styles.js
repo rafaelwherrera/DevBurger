@@ -3,11 +3,13 @@ import ReactSelect from "react-select";
 import { Button } from "../../../components";
 
 export const Container = styled.div`
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2rem;
+  margin-left: ${(props) => (props.$collapsed ? '80px' : '250px')};
+  transition: margin-left 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: auto;
 `;
 
 export const Form = styled.form`

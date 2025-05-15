@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  margin-left: ${(props) => (props.$collapsed ? '80px' : '250px')};
+  transition: margin-left 0.3s ease;
+  padding: 24px;
+  height: 100vh;
+  overflow-y: auto;
+`;
 
 export const ProductImage = styled.img`
     height: 80px;

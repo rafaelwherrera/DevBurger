@@ -85,7 +85,7 @@ export function NewProducts() {
 
   return (
     <Container color="#15151f">
-      <h2>Adicionar Novo Produto</h2>
+      
       <Form onSubmit={handleSubmit(onSubmit)}>
 
         <InputGroup>

@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import { UserLayout } from "../layouts/UserLayout";
-import DashboardAdmin from "../containers/Admin/Dashboard";
 import {
     Cart,
     Home,
@@ -16,15 +15,14 @@ import {
     NewCategory,
     EditCategory,
     Category,
-    Clients,
 } from "../containers";
 import AdminLayout from '../layouts/AdminLayout';
 import React from 'react';
 
 export function Router() {
     return (
-        
-        <Routes> 
+
+        <Routes>
             <Route path="/" element={<UserLayout />} >
                 <Route path="/" element={<Home />} />
                 <Route path="/cardapio" element={<Menu />} />
@@ -34,8 +32,8 @@ export function Router() {
             </Route>
 
 
-            <Route path="/admin" element={<AdminLayout />} >
-                <Route index element={<DashboardAdmin />} />
+            <Route path="/admin" element={<AdminLayout />}>
+                <Route index element={<Orders />} /> {/* Essa é a rota que será carregada ao acessar /admin */}
                 <Route path="pedidos" element={<Orders />} />
                 <Route path="novo-produto" element={<NewProducts />} />
                 <Route path="editar-produto" element={<EditProducts />} />
@@ -43,7 +41,6 @@ export function Router() {
                 <Route path="nova-categoria" element={<NewCategory />} />
                 <Route path="editar-categoria" element={<EditCategory />} />
                 <Route path="categorias" element={<Category />} />
-                <Route path="clientes" element={<Clients />} />
             </Route>
 
             <Route path="/login" element={<Login />} />

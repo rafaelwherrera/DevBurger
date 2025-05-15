@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    padding: 24px;
+  margin-left: ${(props) => (props.$collapsed ? '80px' : '250px')};
+  transition: margin-left 0.3s ease;
+  padding: 24px;
+  height: 100vh;
+  overflow-y: auto;
 `;
 
 export const EditButton = styled.button`
